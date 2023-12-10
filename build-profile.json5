@@ -1,0 +1,40 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "/Users/zealjiang/.ohos/config/openharmony/auto_ohos_default_HelloWorld_com.example.helloworld.cer",
+          "storePassword": "0000001B69AB9FE4982D18B755AC7A73410F6D8DF65DEED2FA9F7704D6A269540277472D1E78F6D58FA6C5",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B28DC2B004073C3C03D214ADDD1AAC969E91D4821AFCC16C75701F15AE368F01FEC67954B2DDF1B",
+          "profile": "/Users/zealjiang/.ohos/config/openharmony/auto_ohos_default_HelloWorld_com.example.helloworld.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/zealjiang/.ohos/config/openharmony/auto_ohos_default_HelloWorld_com.example.helloworld.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
